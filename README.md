@@ -1,19 +1,16 @@
 # TOUCH-BASED-DEVICE-CONTROL-SYSTEM-FOR-BEDRIDDEN-PATIENTS
-# Touch-Based Device Control System for Bedridden Patients
 
 ## Overview
 
 This project implements a Password-Protected Touch-Based Device Control System for Bedridden Patients using the LPC2148 ARM7 Microcontroller. The system enables physically challenged or bedridden individuals to control household devices through a resistive touch screen interface after successful password authentication. Passwords are securely stored in EEPROM and can be modified when required. The system also includes an emergency alert feature using a buzzer, providing additional safety and convenience.
 
 ## Block Diagram
-
-
+<p align="center">
+<img width="927" height="566" alt="Block diagram" src="https://github.com/user-attachments/assets/e59a4e84-d018-4116-8abb-14d714489fe3" />
 
 ## Project Images and Videos
 
-Add project images, circuit diagrams, demonstrations, and videos here:
-
-https://drive.google.com/drive/folders/1PEEHIhly84znwjvupmyLy4uzsm6-apf1
+https://drive.google.com/drive/folders/1LTOgoQdOcuxj-susWcuXqCTDDselpIQq
 
 ## Features
 
@@ -36,11 +33,10 @@ https://drive.google.com/drive/folders/1PEEHIhly84znwjvupmyLy4uzsm6-apf1
 * Resistive Touch Screen Module
 * 16x2 LCD Display
 * 4x4 Matrix Keypad
-* AT25LC512 EEPROM
+* AT25LC512 SPI EEPROM
 * LED1 (Light Control)
 * LED2 (Fan Control)
 * Buzzer
-* MAX232 Interface Circuit
 * Power Supply
 
 ## Software Requirements
@@ -67,15 +63,6 @@ https://drive.google.com/drive/folders/1PEEHIhly84znwjvupmyLy4uzsm6-apf1
 7. Updated password is saved permanently in EEPROM.
 8. LCD continuously displays device status and user feedback.
 
-## Touch Screen Control Regions
-
-| Touch Area | Function            |
-| ---------- | ------------------- |
-| Region 1   | Enable Control      |
-| Region 2   | Buzzer ON/OFF       |
-| Region 3   | Fan (LED2) ON/OFF   |
-| Region 4   | Light (LED1) ON/OFF |
-| Region 5   | Disable Control     |
 
 ## Modules Used
 
@@ -116,7 +103,8 @@ Controls LEDs and buzzer based on touch-screen input.
 * Smart Home Automation
 * Rehabilitation Support Systems
 
-Future Improvements
+## Future Enhancements
+
 * IoT Integration: Enable remote monitoring and control of devices through a mobile app or web dashboard.
 * Wi-Fi/Bluetooth Connectivity: Allow wireless communication with caregivers and healthcare staff.
 * Cloud-Based Data Storage: Store patient activity and alert logs securely in the cloud.
